@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
-      resouces :days 
-      resouces :events 
+      resources :days 
+      resources :events 
     end
   end
 end
