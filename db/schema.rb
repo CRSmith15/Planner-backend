@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_12_05_194416) do
   create_table "days", force: :cascade do |t|
     t.string "date"
     t.string "time"
+    t.integer "total_events"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
