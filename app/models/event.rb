@@ -1,4 +1,4 @@
 class Event < ApplicationRecord
   belongs_to :day
-  validates :task, presence: true
+  validates :activity, presence: true
 end

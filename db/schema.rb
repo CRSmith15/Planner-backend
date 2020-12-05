@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_12_05_194416) do
   end
 
   create_table "events", force: :cascade do |t|
-    t.string "tasks"
+    t.string "activity"
     t.string "description"
     t.integer "day_id", null: false
     t.datetime "created_at", precision: 6, null: false
