@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+day = Day.create(date: "04/11/2020", time: "2:30 pm")
+
+event1 = Event.create(activity: "Walk Dog", description: "Take Buddy around the block", day_id: 1)
