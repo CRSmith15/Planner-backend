@@ -9,7 +9,7 @@ class Day < ApplicationRecord
 
 
     def update_total_events
-        self.total_events = self.events.length
+        self.total_events === self.events.length
     end
 
 end
