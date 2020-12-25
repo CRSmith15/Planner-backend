@@ -11,7 +11,7 @@ class Api::V1::EventsController < ApplicationController
         @event = @day.events.build(event_params)
         if @event.save 
             @day.update_total_events
-            render json: @event 
+            render json: @day 
         else
             render json: {error: 'Error creating event'}
         end
