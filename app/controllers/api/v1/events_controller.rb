@@ -22,15 +22,11 @@ class Api::V1::EventsController < ApplicationController
         render json: @event 
     end
 
-    def update 
-        @event = @day.events.find_by(id: params[:id])
-        @event.update_attributes(event_params)
-        render json: @event 
-    end
-
     def destroy 
-        @event = @day.events.find_by(id: params[:id])
-        @event.destory
+        @event = Event.find(params["id"])
+        @day = Day.find(@event.day_id)
+        @event.destroy
+        render json: @day
     end
 
     private 

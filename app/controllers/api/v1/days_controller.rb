@@ -19,16 +19,6 @@ class Api::V1::DaysController < ApplicationController
         render json: @day
     end
 
-    def update 
-        @day = Day.find(params[:id])
-        @day.update_attributes(day_params)
-        render json: @day 
-    end
-
-    def destroy 
-        @day = Day.find(params[:id])
-        @day.destory
-    end
 
     private 
 
